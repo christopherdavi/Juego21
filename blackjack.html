@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+
+<head>
+  <title>21</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Juego Blackjack">
+  <meta name="keywords" content="Juego Blackjack">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+  <link rel="stylesheet" href="css/blackjack.css">
+  <script src="js/blackjack-v2.js"></script>
+</head>
+<body onload="blackjack.iniciarPartida();"background="fondocarta.jpg">
+
+  <div id="marco_exterior">
+    <header id="cabecera">
+      <h1>
+        <span class="rojo">&hearts;</span><span class="negro">&spades;</span>
+        21        
+<span class="negro">&clubs;</span><span class="rojo">&diams;</span>
+      </h1>
+    </header>
+    <div id="tapete">
+      <section id="crupier">
+        <h3>Crupier</h3>
+        <div id="cartas_crupier">
+        </div>
+      </section>
+      <div id="informacion">
+        El jugador debe pedir una carta
+      </div>
+      <section id="jugador">
+        <h3>Jugador</h3>
+        <div id="cartas_jugador">
+        </div>
+      </section>
+    </div>
+    <div id="mensaje">
+      mensaje
+    </div>
+    <div id="puntuacion">
+      Puntos crupier: <span id="puntos_crupier">99</span>&nbsp;&nbsp;&nbsp;
+      Puntos jugador: <span id="puntos_jugador">99</span>
+    </div>
+    <div id="botones">
+      <button id="reiniciar" onclick="location.reload()">Reiniciar</button>
+      <button id="pasar" onclick="blackjack.botonPasar();">Pasar</button>
+      <button id="pedir_carta" onclick="blackjack.botonPedirCarta();">Pedir Carta</button>
+    </div>
+    
+  </div>
+</body>
+</html>
